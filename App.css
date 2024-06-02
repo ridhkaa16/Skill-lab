@@ -1,0 +1,86 @@
+/* Define the color palette as CSS variables */
+:root {
+  --licorice: #19100A;
+  --chamoisee: #986D5A;
+  --dark-purple: #382130;
+  --eggplant: #54384B;
+  --chinese-violet: #7C5969;
+}
+
+/* Global styles */
+body {
+  background-color: var(--licorice);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: var(--dark-purple) !important;
+}
+
+.navbar-brand, .nav-link, .navbar-nav .nav-item .nav-link, .navbar-toggler-icon {
+  color: white !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
+  color: var(--chamoisee) !important;
+}
+
+.btn-outline-success {
+  color: white !important;
+  border-color: var(--chamoisee) !important;
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus {
+  background-color: var(--chamoisee) !important;
+  border-color: var(--chamoisee) !important;
+}
+
+.carousel-caption h5, .carousel-caption p {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+}
+
+.card {
+  background-color: var(--eggplant) !important;
+  color: white !important;
+}
+
+.card-title, .card-text {
+  color: white !important;
+}
+
+.card .btn-primary {
+  background-color: var(--chamoisee) !important;
+  border-color: var(--chamoisee) !important;
+}
+
+.card .btn-secondary {
+  background-color: var(--chinese-violet) !important;
+  border-color: var(--chinese-violet) !important;
+}
+
+.card .btn-primary:hover, .card .btn-primary:focus, .card .btn-secondary:hover, .card .btn-secondary:focus {
+  opacity: 0.8;
+}
+
+.modal-content {
+  background-color: var(--licorice) !important;
+  color: white !important;
+}
+
+.footer {
+  background-color: var(--dark-purple);
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover, .footer a:focus {
+  color: var(--chinese-violet);
+}
